@@ -1,0 +1,39 @@
+{
+  "dbPath": "./market.sqlite",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "DOGEUSDT",
+    "XLMUSDT",
+    "XRPUSDT",
+    "LTCUSDT",
+    "DOTUSDT",
+    "SHIBUSDT",
+    "BNBUSDT"
+  ],
+  "intervals": [
+    "15m",
+    "30m",
+    "1h",
+    "4h",
+    "12h",
+    "1d",
+    "1w"
+  ],
+  "bootstrap": {
+    "startDate": "2018-01-01T00:00:00Z"
+  },
+  "rateLimit": {
+    "requestsPerMinute": 600,
+    "maxConcurrent": 4,
+    "retry": {
+      "baseMs": 500,
+      "maxMs": 60000,
+      "maxRetries": 8
+    }
+  },
+  "http": {
+    "timeoutMs": 15000
+  },
+  "logLevel": "info"
+}
